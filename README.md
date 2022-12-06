@@ -1,1 +1,1 @@
-# rsschool-cv
+https://tulerclxn.github.io/rsschool-cv/
