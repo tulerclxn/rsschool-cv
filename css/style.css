@@ -1,0 +1,156 @@
+body {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 300;
+    color: black;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a:visited, a {
+    color: white;
+    text-decoration: none;
+}
+
+/* // */
+a {
+    color: #FFFFFF;
+}
+.header {
+    background-color: rgb(22, 22, 22);
+    padding: 30px 0;
+}
+.container {
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* main */
+/* arrow */
+.arrow-down {
+    margin: 30px;
+}
+.arrow-down span {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid #337AB7;
+    border-right: 5px solid #337AB7;
+    transform: rotate(45deg);
+    margin: -16px;
+    animation: arrow-down 2s infinite;
+}
+.arrow-down span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.arrow-down span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes arrow-down {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}
+/* arrow */
+
+.main-wrapper img {
+    border-radius: 50%;
+}
+
+.main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* info */
+.info-title {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.info-title::after {
+    content: '';
+    opacity: .3;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 105%;
+    position: absolute;
+    background-color: rgb(80, 101, 148);
+}
+
+.info-list {
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.info-about {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 30px;
+}
+
+.about-info {
+    max-width: 50%;
+    font-weight: 400;
+    font-size: 1.3em;
+}
+
+.code {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.footer {
+    background-color: rgb(29, 26, 26);
+    padding: 50px 0;
+}
+
+.footer-item {
+    color: white;
+    font-size: 1.7em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
